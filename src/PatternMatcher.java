@@ -66,14 +66,14 @@ public class PatternMatcher {
 
         // Find HTML tags
 
-        Pattern pattern4 = Pattern.compile("<[a-zA-Z0-9]+>   </[a-zA-Z0-9]+>");
+        Pattern pattern4 = Pattern.compile("<[a-zA-Z0-9]+>(.*?)</[a-zA-Z0-9]+>");
         Matcher matcher4 = pattern4.matcher("<h1>Nayeem loves counseling</h1>\n" +
                 "<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>\n" +
                 "<Amee>safat codes like a ninja</amee>\n" +
                 "<SA premium>Imtiaz has a secret crush</SA premium>");
 
         while(matcher4.find()){
-            System.out.println(matcher4.group());
+            System.out.println(matcher4.group(1));
         }
 
 
