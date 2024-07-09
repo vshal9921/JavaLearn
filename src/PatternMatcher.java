@@ -74,7 +74,7 @@ public class PatternMatcher {
                 "<SA premium>Imtiaz has a secret crush</SA premium>");
 
         while(matcher4.find()){
-            System.out.println(matcher4.group(1));
+            System.out.println(matcher4.group());
         }
 
 
